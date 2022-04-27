@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: hell-world-pod 
+  labels: 
+    apps: hello-world 
+spec:
+  containers:
+    - name: hello-world-container 
+      image: httpd:latest 
+      ports: 
+        - containerPort: 80 
+          protocol: TCP 
+
+
+
